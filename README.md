@@ -29,8 +29,11 @@ Arguments:
   fn - file path
   eff_n - index of attribute whose ACE to find
   eff - attribute whose ACE to find
+  
 <b>On MNIST dataset</b>:
+
   MNIST.ipynb
+  
 <b>Acknowledgements</b>
 https://github.com/1Konny/Beta-VAE
 <pre>
