@@ -16,15 +16,19 @@ joblib (0.11)
 matplotlib (1.5.1)
 numpy (1.14.5)
 
-Features:
-Causal attributions: causal_analysis_final.py
-
 Usage:
-python causal_analysis_final.py predict effect foldername start_time
-ex: python causal_analysis_final.py predict GS X-Plane_Data_Set/wrong_flap 200
-python learn_causal_regressors.py learn effect_num_header effect
-ex: python learn_causal_regressors.py learn 5 LATG 
+python lstm.py
+python find_tau.py f
+python aircraft_causal_interventions.py f
+python learn_causal_regressors.py learn eff_n eff
+python causal_analysis_final.py predict eff_n fp st
 
+Arguments:
+  f - foldername where flight sequences are stored.
+  st - start time
+  fn - file path
+  eff_n - index of attribute whose ACE to find
+  eff - attribute whose ACE to find
 <b>On MNIST dataset</b>:
   MNIST.ipynb
 <b>Acknowledgements</b>
