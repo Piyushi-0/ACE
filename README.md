@@ -33,7 +33,7 @@ Arguments:
 <b>On MNIST dataset</b>:
 
 MNIST.ipynb
-  
+</pre><br>  
 <b>Acknowledgements</b>
 https://github.com/1Konny/Beta-VAE
-<pre>
+
