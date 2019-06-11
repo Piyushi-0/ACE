@@ -166,9 +166,7 @@ while(1):
 		print (pred_changed2/counter*1.0)				
 		sys.exit()
 	counter += 1.0
-	#if idx%1000 == 0:
-	#	print idx
-#print loss_val.item()/len(test_x)
+	
 
     
     	
