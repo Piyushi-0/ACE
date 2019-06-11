@@ -17,12 +17,6 @@ output_size = 1
 lstm = nn.GRU(num_features, num_hidden).cuda()
 output_layer = nn.Linear(num_hidden, output_size).cuda()
 
-"""for name, param in lstm.named_parameters():
-  if 'bias' in name:
-     nn.init.constant_(param, -3.0)
-  elif 'weight' in name:
-     nn.init.uniform_(param,a=-0.1, b=0.1)"""
-
 loss_function = nn.MSELoss()
 #loss_function = nn.BCEWithLogitsLoss()
 
