@@ -36,8 +36,8 @@ MNIST.ipynb
 <b>Acknowledgements</b><br>
 https://github.com/1Konny/Beta-VAE
 <pre>
-Code for Class-conditional Beta-VAE that we use in our MNIST experiment is a modified version of 
-Beta-VAE code from https://github.com/1Konny/Beta-VAE .
+Code for Class-conditional Beta-VAE that we use in our MNIST experiment is a modified 
+version of Beta-VAE code from https://github.com/1Konny/Beta-VAE .
 After training the model, please put checkpoints in the directory of MNIST.ipynb to 
 visualize causal effects.
 The 'random_z.gif' used in the notebook is the gif you get in outputs folder after training.
