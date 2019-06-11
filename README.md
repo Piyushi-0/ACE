@@ -43,7 +43,9 @@ and "lstm_trained_model" obtained from train_lstm.py in the same directory.
 
 <b>On MNIST dataset</b>:
 
+sh run_mnist_mod.sh
 MNIST.ipynb
+
 Code for Class-conditional Beta-VAE that we use in our MNIST experiment is a modified 
 version of Beta-VAE code from https://github.com/1Konny/Beta-VAE .
 After training the model, please put checkpoints in the directory of MNIST.ipynb to 
