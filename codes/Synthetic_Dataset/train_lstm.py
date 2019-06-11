@@ -9,13 +9,6 @@ import torch.optim as optim
 torch.manual_seed(1)
 
 
-#train_x = joblib.load("train_x.pkl")
-#train_y = joblib.load("train_y.pkl")
-#test_x = joblib.load("test_x.pkl")
-#test_y = joblib.load("test_y.pkl")
-
-#print train_x.shape
-
 num_features = 1
 num_hidden = 1
 output_size = 1
@@ -54,10 +47,8 @@ while(1):
             y_label = 0.0
       
         optimizer.zero_grad()
-	#output_layer.zero_grad()
 
         # initialize the hidden state.
-	#hidden = (autograd.Variable(torch.zeros(1, 1, num_hidden).type(torch.cuda.FloatTensor), requires_grad=True), autograd.Variable(torch.zeros(1, 1, num_hidden).type(torch.cuda.FloatTensor), requires_grad=True))
 	hidden = autograd.Variable(torch.zeros(1, 1, num_hidden).type(torch.cuda.FloatTensor))
 	input_torchvar = autograd.Variable(torch.cuda.FloatTensor(input_data), requires_grad=True)
         output, hidden = lstm(input_torchvar.view(len(input_data), 1, -1), hidden)
@@ -71,9 +62,6 @@ while(1):
         loss.backward()
         
         optimizer.step()
-	"""if idx%1000 == 0:
-		print idx, loss_val.item()/(idx + 1)
-    print loss_val.item()/float(len_of_samples)"""
         counter += 1
         if counter%1000 == 0:
             print loss_val/1000.0
