@@ -38,12 +38,12 @@ python train_lstm.py
 python toy_causal.py
 python evaluate_lstm.py
 
-To run toy_causal.py and evaluate_lstm.py, please put "output_layer_trained_model" and "lstm_trained_model" obtained from train_lstm.py in the same directory.
+To run toy_causal.py and evaluate_lstm.py, please put "output_layer_trained_model"
+and "lstm_trained_model" obtained from train_lstm.py in the same directory.
 
 <b>On MNIST dataset</b>:
 
 MNIST.ipynb
-
 Code for Class-conditional Beta-VAE that we use in our MNIST experiment is a modified 
 version of Beta-VAE code from https://github.com/1Konny/Beta-VAE .
 After training the model, please put checkpoints in the directory of MNIST.ipynb to 
