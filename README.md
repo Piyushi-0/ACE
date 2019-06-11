@@ -16,6 +16,7 @@ matplotlib (1.5.1)
 numpy (1.14.5)
 
 Usage:
+Please run in the following order-
 python lstm.py
 python find_tau.py f
 python aircraft_causal_interventions.py f
@@ -32,7 +33,12 @@ Arguments:
 <b>On Synthetic Dataset</b>:
 
 Usage:
-python generate_data.py
+Please run in the following order-
+python train_lstm.py
+python toy_causal.py
+python evaluate_lstm.py
+
+To run toy_causal.py and evaluate_lstm.py, please put "output_layer_trained_model" and "lstm_trained_model" obtained from train_lstm.py in the same directory.
 
 <b>On MNIST dataset</b>:
 
