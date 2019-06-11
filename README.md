@@ -29,6 +29,11 @@ Arguments:
   eff_n - index of attribute whose ACE to find
   eff - attribute whose ACE to find
   
+<b>On Synthetic Dataset</b>:
+
+Usage:
+python generate_data.py
+
 <b>On MNIST dataset</b>:
 
 MNIST.ipynb
