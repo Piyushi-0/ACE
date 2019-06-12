@@ -20,15 +20,14 @@ Please run in the following order-
 python lstm.py
 python find_tau.py f
 python aircraft_causal_interventions.py f
-python learn_causal_regressors.py learn eff_n eff
+python learn_causal_regressors.py learn eff_n
 python causal_analysis_final.py predict eff_n fp st
 
 Arguments:
   f - foldername where flight sequences are stored.
   st - start time
-  fn - file path
-  eff_n - index of attribute whose ACE to find
-  eff - attribute whose ACE to find
+  fp - file path
+  eff_n - index of attribute which is the effect
   
 <b>On Synthetic Dataset</b>:
 
