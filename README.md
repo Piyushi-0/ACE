@@ -29,9 +29,9 @@ Arguments:
   fp - file path
   eff_n - index of attribute which is the effect
  
- Please put "output_layer_trained_model", "lstm_trained_model", "feature_maxs.npy", "feature_mins.npy"
- obtained from lstm.py in the same directory as other codes. 'Headers.csv' is a file with only the 
- names(headers) of attributes.
+ Please put "output_layer_trained_model", "lstm_trained_model", "feature_maxs.npy",
+ "feature_mins.npy" obtained from lstm.py in the same directory as other codes. 
+ 'Headers.csv' is a file with only the names(headers) of attributes.
 
 <b>On Synthetic Dataset</b>:
 
