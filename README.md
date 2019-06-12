@@ -39,6 +39,7 @@ python evaluate_lstm.py
 
 To run toy_causal.py and evaluate_lstm.py, please put "output_layer_trained_model"
 and "lstm_trained_model" obtained from train_lstm.py in the same directory.
+'Headers.csv' is a csv containing only the attribute names.
 
 <b>On MNIST dataset</b>:
 
