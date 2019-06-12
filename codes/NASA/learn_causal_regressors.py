@@ -56,7 +56,7 @@ def func(x, m, n, X, Y, raw_eigvals):
     return -log_marginal_likelihood
    
 
-def learn_causal_regressors(attribute, effect, feature):
+def learn_causal_regressors(attribute, effect):
     #causal strength for predicting the 100th time step LATG of attribute index
     output_index = [100,0, effect]
     print "causal_factor", headers[attribute]
@@ -64,7 +64,7 @@ def learn_causal_regressors(attribute, effect, feature):
     predictive_means_at_timestep = []
     for t in range(100,80,-1):
         feature_index = [t,0,attribute]
-        f = open(feature+'/expectation_do_x_for_cause_'+str(feature_index[0]) + "-"+str(feature_index[2]) + "_and_effect_" + str(output_index[0]) + "-" + str(output_index[2]))
+        f = open('expectation_do_x_for_cause_'+str(feature_index[0]) + "-"+str(feature_index[2]) + "_and_effect_" + str(output_index[0]) + "-" + str(output_index[2]))
 
         expectation_do_x = np.array(pickle.load(f))
         x = np.linspace(0.0,1.0,100)
@@ -104,18 +104,12 @@ def learn_causal_regressors(attribute, effect, feature):
         for polynomial_order in range(chosen_degree):
             X_n = np.vstack((X_n, x_n**(polynomial_order+1)))
 
-        
-
         predictive_mean_val = np.dot(predictive_mean.T, X_n).reshape(-1,)
         predictive_var = (1.0/beta) + np.diagonal(np.dot(np.dot(X_n.T,np.linalg.inv(predictive_precision)),X_n))
        
         low_CI = predictive_mean_val - np.sqrt(predictive_var)
         upper_CI =  predictive_mean_val + np.sqrt(predictive_var)
-        #plt.plot(np.arange(predictive_mean_val.shape[0]), predictive_mean_val, label="predictive mean")
-        #plt.fill_between(np.arange(predictive_mean_val.shape[0]), low_CI, upper_CI, color = '#539caf', alpha = 0.4, label = '95% CI')
-        #plt.show()
-        #plt.clf()
-        #print np.sqrt(predictive_var)/predictive_mean_val
+
         #integrating for average causal effect
         integrated_val = 0
         for order in range(chosen_degree+1):
@@ -124,16 +118,13 @@ def learn_causal_regressors(attribute, effect, feature):
         predictive_means_at_timestep.append(predictive_mean)
     return np.array(predictive_means_at_timestep), np.array(integrated_feature_val_at_timestep)
 
-#test_set = np.array(get_train_test_data(foldername, max_size=3000, num_of_features=num_features))	
-
 done_attr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 average_causal_effects = []
 
 if sys.argv[1] == "learn":
 	effect = sys.argv[2]
-	feature = sys.argv[3]
 	for attr in done_attr:
-		predictive_means, integrated_value = learn_causal_regressors(attr, effect, feature)
+		predictive_means, integrated_value = learn_causal_regressors(attr, effect)
     		joblib.dump(predictive_means, "predictive_means_"+str(attr))
 		joblib.dump(integrated_value, "integrated_value_"+str(attr))
 
