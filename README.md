@@ -6,7 +6,7 @@ Authors: Aditya Chattopadhyay, Piyushi Manupriya, Anirban Sarkar and Vineeth N B
 
 <pre>
 
-Codes tested on:
+Codes tested with:
 scikit-learn (0.19.1)
 scipy (1.1.0)
 torch (0.4.1)
