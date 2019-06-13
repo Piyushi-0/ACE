@@ -1,7 +1,7 @@
 # ACE
 Code for the paper, <b>Neural Network Attributions: A Causal Perspective.</b>
 
-To be presented at <b>ICML 2019</b>,<br>
+Presented at <b>ICML 2019</b>,<br>
 Authors: Aditya Chattopadhyay, Piyushi Manupriya, Anirban Sarkar and Vineeth N Balasubramanian
 
 <pre>
