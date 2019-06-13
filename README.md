@@ -15,6 +15,7 @@ matplotlib (2.2.2)
 numpy (1.15.2)
 
 <b>On NASA dataset</b>:
+<a href="https://c3.nasa.gov/dashlink/projects/85/">NASA Dataset</a>
 
 Usage:
 Please run in the following order-
@@ -42,7 +43,7 @@ sh run_mnist_mod.sh
 MNIST.ipynb
 
 Code for Class-conditional Beta-VAE that we use in our MNIST experiment is a modified 
-version of Beta-VAE code from https://github.com/1Konny/Beta-VAE(acknowledged).
+version of Beta-VAE code from <a href="https://github.com/1Konny/Beta-VAE">https://github.com/1Konny/Beta-VAE</a>(acknowledged).
 After training the model, please put checkpoints in the directory of MNIST.ipynb to 
 visualize causal effects.
 The 'random_z.gif' used in the notebook is the gif you get in outputs folder after training.
