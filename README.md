@@ -36,6 +36,8 @@ Arguments:
 
 <b>On MNIST dataset</b>:
 
+Usage:
+Please run in the following order-
 sh run_mnist_mod.sh
 MNIST.ipynb
 
