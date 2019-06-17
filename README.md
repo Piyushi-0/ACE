@@ -5,7 +5,8 @@ Presented at <b>ICML 2019</b>,<br>
 Authors: Aditya Chattopadhyay, Piyushi Manupriya, Anirban Sarkar and Vineeth N Balasubramanian
 
 <pre>
-
+ACE is calculated using Taylor's Series for NASA, Synthetic Dataset, Iris codes. 
+Monte Carlo Sampling is used for MNIST.
 Codes tested with:
 scikit-learn (0.19.1)
 scipy (1.1.0)
