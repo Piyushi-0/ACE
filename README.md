@@ -31,8 +31,6 @@ Arguments:
   fp - file path
   eff_n - index of attribute which is the effect
  
- Please put 'output_layer_trained_model', 'lstm_trained_model', 'feature_maxs.npy',
- 'feature_mins.npy' obtained from lstm.py in the same directory as other codes. 
  'Headers.csv' is a file with only the names(headers) of attributes.
 
 <b>On MNIST dataset</b>:
@@ -44,8 +42,7 @@ MNIST.ipynb
 
 Code for Class-conditional Beta-VAE that we use in our MNIST experiment is a modified 
 version of Beta-VAE code from <a href="https://github.com/1Konny/Beta-VAE">https://github.com/1Konny/Beta-VAE</a>(acknowledged).
-After training the model, please put checkpoints in the directory of MNIST.ipynb to 
-visualize causal effects.
+
 The 'random_z.gif' used in the notebook is the gif you get in outputs folder after training.
 
 <b>On Synthetic Dataset</b>:
@@ -55,9 +52,6 @@ Please run in the following order-
 python train_lstm.py
 python toy_causal.py
 python evaluate_lstm.py
-
-To run toy_causal.py and evaluate_lstm.py, please put 'output_layer_trained_model'
-and 'lstm_trained_model' obtained from train_lstm.py in the same directory.
 
 <b>On IRIS Dataset</b>:
 
@@ -69,8 +63,6 @@ plot_iris.ipynb
 causal_iris.ipynb
 python learn_cr.py
 
-To run toy_causal.py and evaluate_lstm.py, please put 'output_layer_trained_model'
-and 'lstm_trained_model' obtained from train_lstm.py in the same directory.
 </pre><br>  
 <b>Acknowledgements</b><br>
 https://github.com/1Konny/Beta-VAE
