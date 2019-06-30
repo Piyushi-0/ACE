@@ -44,7 +44,7 @@ def return_data(args):
 	num_workers = args.num_workers
 	image_size = args.image_size
     # assert image_size == 64, 'currently only image size of 64 is supported'
-	root = os.path.expanduser('~/data/mnist')#os.path.join(dset_dir, 'mnist')
+	root = os.path.expanduser('~/data/mnist')
 	transform = transforms.Compose([
             transforms.Resize((image_size, image_size)),
             transforms.ToTensor(),])
@@ -52,11 +52,8 @@ def return_data(args):
 	dset = CustomImageFolder
 
 	data_path = os.path.expanduser('~/data/mnist')
-        # transform = transforms.Compose([
-        #     transforms.Resize(1, image_size*image_size),
-        #     transforms.ToTensor(),])
-        kwargs = {}#{'num_workers': 1, 'pin_memory': True}# if args.cuda else {}
-        # train_data = dset(**train_kwargs)
+        
+        kwargs = {}
         train_loader = torch.utils.data.DataLoader(
             datasets.MNIST(data_path, train = True, download = True, transform = transforms.ToTensor()),
             batch_size = args.batch_size, shuffle = True, **kwargs)
