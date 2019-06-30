@@ -1,5 +1,5 @@
 """solver.py"""
-
+"""Trains and stores checkpoints."""
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -144,6 +144,7 @@ class Solver(object):
         self.gather = DataGather()
 
     def train(self):
+	"""Trains the Class-Specific Beta VAE"""
         self.net_mode(train=True)
         import random
         self.C_max = Variable(cuda(torch.FloatTensor([self.C_max]), self.use_cuda))
@@ -153,13 +154,13 @@ class Solver(object):
         pbar.update(self.global_iter)
 
         while not out:
-            # for i, (x, _) in enumerate(self.data_loader):
+            
             for x, y in self.data_loader:
                 self.global_iter += 1
                 pbar.update(1)
 
                 x = Variable(cuda(x, self.use_cuda))
-                # y = Variable(cuda(y, self.use_cuda))
+                
                 target_ori = Variable(cuda(y, self.use_cuda))
                 
                 target = np.eye(10)[y.numpy()]
@@ -174,9 +175,9 @@ class Solver(object):
                 total_kld, dim_wise_kld, mean_kld = kl_divergence(mu, logvar)
 		
                 cl=class_loss(logits, target_ori.data.long())
-                #print("Classification loss "+str(cl))
-                beta_vae_loss = self.l1*(recon_loss + self.beta*total_kld)+self.l2*cl##############
                 
+                beta_vae_loss = self.l1*(recon_loss + self.beta*total_kld)+self.l2*cl
+                #We trained a joint network of Class-specific Beta VAE & a classifier for some other experiments.
                 self.optim.zero_grad()
                 beta_vae_loss.backward()
                 self.optim.step()
@@ -214,7 +215,7 @@ class Solver(object):
                     self.save_checkpoint('last')
                     pbar.write('Saved checkpoint(iter:{})'.format(self.global_iter))
 
-                if self.global_iter%5000==0:####################0 == 0:
+                if self.global_iter%5000==0:
                     self.save_checkpoint(str(self.global_iter))
 
                 if self.global_iter >= self.max_iter:
@@ -242,7 +243,7 @@ class Solver(object):
                         opts=dict(title=str(self.global_iter)), nrow=10)
         self.net_mode(train=True)
 
-    def viz_lines(self):###Skip
+    def viz_lines(self):
         self.net_mode(train=False)
         recon_losses = torch.stack(self.gather.data['recon_loss']).cpu()
 
@@ -373,13 +374,13 @@ class Solver(object):
         rand_idx = random.randint(1, n_dsets-1)
 
         random_label = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
-        # random_label = [0, 1]
+        
         random_label = torch.FloatTensor([random_label])
         random_label = Variable(cuda(random_label, self.use_cuda))
 
         random_z_feat = Variable(cuda(torch.rand(1, 10), self.use_cuda), volatile=True)
         random_z = torch.cat([random_z_feat, random_label], 1)
-            # Z = {'fixed_img':fixed_img_z, 'random_img':random_img_z, 'random_z':random_z}
+            
 	Z = {'random_z':random_z}
 
         gifs = []
