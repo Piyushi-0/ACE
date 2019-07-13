@@ -51,19 +51,15 @@ The 'random_z.gif' used in the notebook is the gif you get in outputs folder aft
 
 Usage:
 Please run in the following order-
-python train_lstm.py
-python toy_causal.py
+toy_dataset.ipynb
 python evaluate_lstm.py
 
 <b>On IRIS Dataset</b>:
 
 Usage:
 Please run in the following order-
-nn_iris.ipynb
-python decision_tree.py
-plot_iris.ipynb
-causal_iris.ipynb
-python learn_cr.py
+python train.py
+ACE.ipynb
 
 </pre><br>  
 <b>Acknowledgements</b><br>
