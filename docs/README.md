@@ -1,10 +1,10 @@
 <div id="primarycontent">
 <center><h1 style="color:Teal">Neural Network Attributions: A Causal Perspective</h1></center>
-<center><h2>Aditya Chattopadhyay<sup>1</sup>&nbsp;
+<center><h2 style="font-weight:normal">Aditya Chattopadhyay<sup>1</sup>&nbsp;
   Piyushi Manupriya<sup>2</sup>&nbsp;
   Anirban Sarkar<sup>2</sup>&nbsp;
-  <a href="https://www.iith.ac.in/~vineethnb/" style="color:black" style="font-weight:normal">Vineeth N Balasubramanian</a><sup>2</sup></h2></center>
-<center><h3><sup>1</sup><a href="http://cis.jhu.edu/" style="color:black" style="font-weight:normal">Johns Hopkins University</a> &nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup><a href="https://cse.iith.ac.in/" style="color:black" style="font-weight:normal">IIT Hyderabad</a></h3></center>
+  <a href="https://www.iith.ac.in/~vineethnb/" style="color:black">Vineeth N Balasubramanian</a><sup>2</sup></h2></center>
+<center><h3><sup>1</sup><a href="http://cis.jhu.edu/" style="color:black; font-weight:normal">Johns Hopkins University</a> &nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup><a href="https://cse.iith.ac.in/" style="color:black; font-weight:normal">IIT Hyderabad</a></h3></center>
 <center><h3>In ICML 2019</h3></center>
   
 <center><h3><strong><a href="https://arxiv.org/pdf/1902.02302.pdf">Paper</a> | <a href="https://github.com/Piyushi-0/ACE">PyTorch code</a></strong> </h3></center>
