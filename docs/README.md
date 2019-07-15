@@ -1,7 +1,7 @@
-# ACE-Docs
+# ACE-Doc-555
 <b>Neural Network Attributions: A Causal Perspective</b><br>
 Aditya Chattopadhyay, Piyushi Manupriya, Anirban Sarkar, Vineeth N Balasubramanian<br>
-Presented at ICML 2019
+Presented at ICML 2019, Long Beach, CA.
 <pre>
 Dependencies:
 scikit-learn (0.19.1)
@@ -43,6 +43,7 @@ NASA dataset used in Aircraft code is uploaded at https://drive.google.com/open?
 Class-conditional Beta VAE code used in MNIST experiments is a adapted from Beta VAE code from https://github.com/1Konny/Beta-VAE <br>
 
 <b>References:</b><br>
+
 https://github.com/1Konny/Beta-VAE<br>
 https://c3.nasa.gov/dashlink/projects/85/resources/?type=ds
 
