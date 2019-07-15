@@ -4,8 +4,8 @@
   Piyushi Manupriya<sup>2</sup>&nbsp;
   Anirban Sarkar<sup>2</sup>&nbsp;
   Vineeth N Balasubramanian<sup>2</sup></h2></center>
-<center><h2><sup>1</sup><a href="http://cis.jhu.edu/" style="color:black">Johns Hopkins University</a> &nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup><a href="https://cse.iith.ac.in/" style="color:black">IIT Hyderabad</a></h2></center>
-<center><h2>In ICML 2019</h2></center>
+<center><h3><sup>1</sup><a href="http://cis.jhu.edu/" style="color:black">Johns Hopkins University</a> &nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup><a href="https://cse.iith.ac.in/" style="color:black">IIT Hyderabad</a></h3></center>
+<center><h3>In ICML 2019</h3></center>
   
 <center><h3><strong><a href="https://arxiv.org/pdf/1902.02302.pdf">Paper</a> | <a href="https://github.com/Piyushi-0/ACE">PyTorch code</a></strong> </h3></center>
 <h3>Abstract</h3>
