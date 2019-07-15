@@ -31,7 +31,7 @@ ACE on MNIST dataset
 
 
 <h3>Acknowledgement</h3>
-<p align="justify">We are grateful to the Ministry of Human Resource Develop-ment, India; Department of Science and Technology, India;as well as Honeywell India for the financial support of thisproject through the UAY program. We thank the anonymousreviewers for their valuable feedback that helped improvethe presentation of this work.</p>
+<p align="justify">We are grateful to the Ministry of Human Resource Development, India; Department of Science and Technology, India;as well as Honeywell India for the financial support of this project through the UAY program. We thank the anonymous reviewers for their valuable feedback that helped improvethe presentation of this work.</p>
 
 </body>
 </html>
