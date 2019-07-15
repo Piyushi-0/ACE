@@ -3,7 +3,7 @@
 <center><h2 style="font-weight:normal">Aditya Chattopadhyay<sup>1</sup>&nbsp;
   Piyushi Manupriya<sup>2</sup>&nbsp;
   Anirban Sarkar<sup>2</sup>&nbsp;
-  <a href="https://www.iith.ac.in/~vineethnb/" style="color:black">Vineeth N Balasubramanian</a><sup>2</sup></h2></center>
+  <a href="https://www.iith.ac.in/~vineethnb/" style="text-decoration : none; color : #000000;">Vineeth N Balasubramanian</a><sup>2</sup></h2></center>
 <center><h3><sup>1</sup><a href="http://cis.jhu.edu/" style="color:black; font-weight:normal">Johns Hopkins University</a> &nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup><a href="https://cse.iith.ac.in/" style="color:black; font-weight:normal">IIT Hyderabad</a></h3></center>
 <center><h3>In ICML 2019</h3></center>
   
