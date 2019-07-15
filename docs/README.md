@@ -1,5 +1,5 @@
 <div id="primarycontent">
-<center><h1>Neural Network Attributions: A Causal Perspective</h1></center>
+<center><h1 style="color:Blue">Neural Network Attributions: A Causal Perspective</h1></center>
 <center><h2>Aditya Chattopadhyay<sup>1</sup>&nbsp;
   Piyushi Manupriya<sup>2</sup>&nbsp;
   Anirban Sarkar<sup>2</sup>&nbsp;
