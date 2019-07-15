@@ -21,10 +21,10 @@
 <h3>Some results</h3>
 <p>ACE on NASA dataset
 <a href="https://github.com/Piyushi-0/ACE/blob/master/docs/imgs/aircraft_causality.png">
-<img src="https://github.com/Piyushi-0/ACE/blob/master/docs/imgs/aircraft_causality.png" width="1000"> </a>
+<img src="imgs/aircraft_causality.png" width="1000"> </a>
 ACE on MNIST dataset
 <a href="https://github.com/Piyushi-0/ACE/blob/master/docs/imgs/mnist_causality.png">
-<img src="https://github.com/Piyushi-0/ACE/blob/master/docs/imgs/mnist_causality.png" width="1000"> </a>
+<img src="imgs/mnist_causality.png" width="1000"> </a>
 </p>
 
 
