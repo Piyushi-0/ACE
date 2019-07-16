@@ -9,15 +9,19 @@
   
 <center><h3><strong><a href="https://arxiv.org/pdf/1902.02302.pdf">Paper</a> | <a href="https://github.com/Piyushi-0/ACE">Code in Pytorch</a>| <a href="https://github.com/Piyushi-0/ACE/blob/master/ICML_Presentation.pdf">Presentation slides</a></strong> </h3></center>
 
-<video controls preload> 
-    <source src="ICML19_Aditya.mp4"></source> 
-</video>
+
 
 <h3>Abstract</h3>
 <div style="font-size:14px"><p align="justify">We propose a new attribution method for neural networks developed using first principles of causality (to the best of our knowledge, the first such). The neural network architecture is viewed as a Structural Causal Model, and a methodology to compute the causal effect of each feature on the output is presented. With reasonable assumptions  on  the  causal  structure  of  the  input  data,we propose algorithms to efficiently compute the causal effects, as well as scale the approach to data with large dimensionality. We also show how this method can be used for recurrent neural networks.We report experimental results on both simulated and real datasets showcasing the promise and usefulness of the proposed algorithm.</p></div>
    
 <a href="https://arxiv.org/pdf/1902.02302.pdf">Paper on Arxiv</a>
 <p></p>
+<h3>ICML Presentation</h3>
+<p>
+<video controls preload> 
+    <source src="ICML19_Aditya.mp4"></source> 
+</video>
+</p>
 <h3>Citation</h3>
 <p>Aditya Chattopadhyay, Piyushi Manupriya, Anirban Sarkar, Vineeth N Balasubramanian. "Neural Network Attributions: A Causal Perspective", in International Conference on Machine Learning (ICML), 2019.
 <br>
