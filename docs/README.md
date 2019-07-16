@@ -22,12 +22,9 @@
     <source src="ICML19_Aditya.mp4"></source> 
 </video>
 </p>
-<h3>Citation</h3>
-<p>Aditya Chattopadhyay, Piyushi Manupriya, Anirban Sarkar, Vineeth N Balasubramanian. "Neural Network Attributions: A Causal Perspective", in International Conference on Machine Learning (ICML), 2019.
-<br>
-<a href="https://github.com/Piyushi-0/ACE/blob/master/pmlr-v97-chattopadhyay19a.bib">Bibtex</a>
 
 <h3>Some results</h3>
+</p>
 <p>ACE on NASA dataset
 <a href="https://github.com/Piyushi-0/ACE/blob/master/docs/imgs/aircraft_causality.png">
 <img src="imgs/aircraft_causality.png" width="1000"> </a>
@@ -36,7 +33,11 @@ ACE on MNIST dataset
 <img src="imgs/mnist_causality.png" width="1000"> </a>
 </p>
 
-
+<h3>Citation</h3>
+<p>Aditya Chattopadhyay, Piyushi Manupriya, Anirban Sarkar, Vineeth N Balasubramanian. "Neural Network Attributions: A Causal Perspective", in International Conference on Machine Learning (ICML), 2019.
+<br>
+<a href="https://github.com/Piyushi-0/ACE/blob/master/pmlr-v97-chattopadhyay19a.bib">Bibtex</a>
+</p>
 
 <h3>Acknowledgement</h3>
 <p align="justify">We are grateful to the Ministry of Human Resource Development, India; Department of Science and Technology, India;as well as Honeywell India for the financial support of this project through the UAY program. We thank the anonymous reviewers for their valuable feedback that helped improvethe presentation of this work.</p>
