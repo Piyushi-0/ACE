@@ -9,7 +9,7 @@
   
 <center><h3><strong><a href="https://arxiv.org/pdf/1902.02302.pdf">Paper</a> | <a href="https://github.com/Piyushi-0/ACE">Code in Pytorch</a>| <a href="https://github.com/Piyushi-0/ACE/blob/master/ICML_Presentation.pdf">Presentation slides</a></strong> </h3></center>
 
-<video width="320" height="200" controls preload> 
+<video controls preload> 
     <source src="ICML19_Aditya.mp4"></source> 
 </video>
 
