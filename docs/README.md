@@ -24,7 +24,7 @@
 </p>
 
 <h3>Some results</h3>
-</p>
+<p>
 <p>ACE on NASA dataset
 <a href="https://github.com/Piyushi-0/ACE/blob/master/docs/imgs/aircraft_causality.png">
 <img src="imgs/aircraft_causality.png" width="1000"> </a>
