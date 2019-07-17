@@ -3,7 +3,7 @@
 Aditya Chattopadhyay, Piyushi Manupriya, Anirban Sarkar, Vineeth N Balasubramanian<br>
 Presented at ICML 2019
 <pre>
-Dependencies:
+<b>Dependencies</b>:
 scikit-learn (0.19.1)
 scipy (0.17.0)
 torch (0.4.0)
@@ -11,7 +11,7 @@ joblib (0.11)
 matplotlib (1.5.1)
 numpy (1.14.5)
 
-Usage-
+<b>Usage</b>-
 MNIST:
   sh run_mnist_mod.sh
   ipython nbconvert --to python MNIST.ipynb
@@ -39,8 +39,17 @@ Aircraft:
   python causal_analysis_final.py predict effect foldername start_time
   eg. python causal_analysis_final.py predict GS "40" 100
 </pre>
+
 NASA dataset used in Aircraft code is uploaded at https://drive.google.com/open?id=1rEZ3veRpcKH5OZKAoXuVTyC9oMnn78ra <br>
 Class-conditional Beta VAE code used in MNIST experiments is a adapted from Beta VAE code from https://github.com/1Konny/Beta-VAE <br>
+
+<p>
+  <b>If you use this code, please cite our paper: <br> </b>
+    Aditya Chattopadhyay, Piyushi Manupriya, Anirban Sarkar, Vineeth N Balasubramanian. "Neural Network Attributions: A Causal Perspective", in International Conference on Machine Learning (ICML), 2019.<br>
+    <b><a href="https://github.com/Piyushi-0/ACE/blob/master/pmlr-v97-chattopadhyay19a.bib">Bibtex</a><br>
+    and consider giving a star to our repository.
+  </b>
+</p>
 
 <b>References:</b><br>
 https://github.com/1Konny/Beta-VAE<br>
