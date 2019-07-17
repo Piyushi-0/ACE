@@ -41,7 +41,7 @@ Aircraft:
 </pre>
 
 NASA dataset used in Aircraft code is uploaded at https://drive.google.com/open?id=1rEZ3veRpcKH5OZKAoXuVTyC9oMnn78ra <br>
-Class-conditional Beta VAE code used in MNIST experiments is a adapted from Beta VAE code from https://github.com/1Konny/Beta-VAE <br>
+Class-conditional Beta VAE code used in MNIST experiments is adapted from Beta VAE code from https://github.com/1Konny/Beta-VAE <br>
 
 <p>
   <b>If you use this code, please cite our paper: <br> </b>
