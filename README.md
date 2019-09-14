@@ -14,19 +14,15 @@ numpy (1.14.5)
 <b>Usage</b>-
 MNIST:
   sh run_mnist_mod.sh
-  ipython nbconvert --to python MNIST.ipynb
-  python MNIST.py
+  MNIST.ipynb
   
 Iris:
   python decision_tree.py
-  ipython nbconvert --to python train.ipynb
-  python train.py
-  ipython nbconvert --to python ACE.ipynb
-  python ACE.py
+  train.ipynb
+  ACE.ipynb
   
 Synthetic Dataset:
-  ipython nbconvert --to python toy_dataset.ipynb
-  python toy_dataset.py
+  toy_dataset.ipynb
   python evaluate_lstm.py
   
 Aircraft:
